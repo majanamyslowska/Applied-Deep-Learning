@@ -1,0 +1,105 @@
+Task 3 Ablation Study
+————————————————————————————————————————————————
+————————————————————————————————————————————————
+task.py - report
+————————————————————————————————————————————————
+
+———— Sampling method 1 ————
+Final model:
+sampling_method_1_model.pt 
+
+- Report a summary of loss values, speed, metric on training and validation.
+Epoch 1: Training Loss: 0.0939, Training Accuracy: 22.65%, Training F1 Score: 0.2234, Validation Loss: 1.7004, Validation Accuracy: 38.27%, Validation F1 Score: 0.3679, Speed: 131.76 seconds
+
+Epoch 2: Training Loss: 0.0866, Training Accuracy: 26.49%, Training F1 Score: 0.2622, Validation Loss: 1.5895, Validation Accuracy: 42.33%, Validation F1 Score: 0.4063, Speed: 129.62 seconds
+
+Epoch 3: Training Loss: 0.0817, Training Accuracy: 28.50%, Training F1 Score: 0.2824, Validation Loss: 1.4858, Validation Accuracy: 46.25%, Validation F1 Score: 0.4529, Speed: 129.56 seconds
+
+Epoch 4: Training Loss: 0.0781, Training Accuracy: 30.54%, Training F1 Score: 0.3031, Validation Loss: 1.4396, Validation Accuracy: 48.12%, Validation F1 Score: 0.4706, Speed: 129.71 seconds
+
+Epoch 5: Training Loss: 0.0749, Training Accuracy: 32.80%, Training F1 Score: 0.3258, Validation Loss: 1.4066, Validation Accuracy: 48.81%, Validation F1 Score: 0.4875, Speed: 129.60 seconds
+
+Epoch 6: Training Loss: 0.0727, Training Accuracy: 32.13%, Training F1 Score: 0.3194, Validation Loss: 1.3452, Validation Accuracy: 51.52%, Validation F1 Score: 0.5091, Speed: 129.43 seconds
+
+Epoch 7: Training Loss: 0.0708, Training Accuracy: 34.57%, Training F1 Score: 0.3442, Validation Loss: 1.3273, Validation Accuracy: 52.40%, Validation F1 Score: 0.5183, Speed: 129.53 seconds
+
+Epoch 8: Training Loss: 0.0680, Training Accuracy: 34.67%, Training F1 Score: 0.3452, Validation Loss: 1.3240, Validation Accuracy: 52.46%, Validation F1 Score: 0.5080, Speed: 129.51 seconds
+
+Epoch 9: Training Loss: 0.0659, Training Accuracy: 36.59%, Training F1 Score: 0.3644, Validation Loss: 1.2919, Validation Accuracy: 53.79%, Validation F1 Score: 0.5354, Speed: 129.60 seconds
+
+Epoch 10: Training Loss: 0.0641, Training Accuracy: 37.86%, Training F1 Score: 0.3773, Validation Loss: 
+1.2987, Validation Accuracy: 54.33%, Validation F1 Score: 0.5364, Speed: 136.15 seconds
+
+Epoch 11: Training Loss: 0.0623, Training Accuracy: 38.07%, Training F1 Score: 0.3795, Validation Loss: 1.2591, Validation Accuracy: 55.52%, Validation F1 Score: 0.5469, Speed: 132.00 seconds
+
+Epoch 12: Training Loss: 0.0603, Training Accuracy: 39.54%, Training F1 Score: 0.3943, Validation Loss: 1.2614, Validation Accuracy: 56.12%, Validation F1 Score: 0.5601, Speed: 135.88 seconds
+
+Epoch 13: Training Loss: 0.0585, Training Accuracy: 39.70%, Training F1 Score: 0.3961, Validation Loss: 1.2560, Validation Accuracy: 56.42%, Validation F1 Score: 0.5640, Speed: 131.01 seconds
+
+Epoch 14: Training Loss: 0.0562, Training Accuracy: 41.76%, Training F1 Score: 0.4167, Validation Loss: 1.2891, Validation Accuracy: 54.92%, Validation F1 Score: 0.5455, Speed: 129.84 seconds
+
+Epoch 15: Training Loss: 0.0537, Training Accuracy: 41.99%, Training F1 Score: 0.4193, Validation Loss: 1.2926, Validation Accuracy: 55.23%, Validation F1 Score: 0.5494, Speed: 135.85 seconds
+
+Epoch 16: Training Loss: 0.0520, Training Accuracy: 42.92%, Training F1 Score: 0.4285, Validation Loss: 1.2853, Validation Accuracy: 56.40%, Validation F1 Score: 0.5614, Speed: 129.70 seconds
+
+Epoch 17: Training Loss: 0.0506, Training Accuracy: 43.22%, Training F1 Score: 0.4317, Validation Loss: 1.3012, Validation Accuracy: 56.17%, Validation F1 Score: 0.5597, Speed: 130.34 seconds
+
+Epoch 18: Training Loss: 0.0481, Training Accuracy: 44.86%, Training F1 Score: 0.4482, Validation Loss: 1.3273, Validation Accuracy: 55.65%, Validation F1 Score: 0.5580, Speed: 129.86 seconds
+
+Epoch 19: Training Loss: 0.0458, Training Accuracy: 46.14%, Training F1 Score: 0.4613, Validation Loss: 1.3535, Validation Accuracy: 55.44%, Validation F1 Score: 0.5510, Speed: 131.79 seconds
+
+Epoch 20: Training Loss: 0.0450, Training Accuracy: 45.08%, Training F1 Score: 0.4506, Validation Loss: 1.3520, Validation Accuracy: 56.75%, Validation F1 Score: 0.5660, Speed: 129.66 seconds
+Training done.
+
+- Report a summary of loss values and the metrics on the holdout test set.
+Holdout Test Set: Loss: 1.3220, Accuracy: 56.93%, F1 Score: 0.5680
+
+———— Sampling method 2 ———— * method is a hyperparameter, can be changed in line 116
+
+Final model:
+sampling_method_2_model.pt 
+
+- Report a summary of loss values, speed, metric on training and validation.
+Epoch 1: Training Loss: 0.1005, Training Accuracy: 22.30%, Training F1 Score: 0.2192, Validation Loss: 1.7331, Validation Accuracy: 35.75%, Validation F1 Score: 0.3505, Speed: 152.13 seconds
+
+Epoch 2: Training Loss: 0.0955, Training Accuracy: 25.55%, Training F1 Score: 0.2524, Validation Loss: 1.6461, Validation Accuracy: 40.08%, Validation F1 Score: 0.3812, Speed: 150.07 seconds
+
+Epoch 3: Training Loss: 0.0926, Training Accuracy: 28.44%, Training F1 Score: 0.2806, Validation Loss: 1.5494, Validation Accuracy: 43.69%, Validation F1 Score: 0.4233, Speed: 148.22 seconds
+
+Epoch 4: Training Loss: 0.0902, Training Accuracy: 29.64%, Training F1 Score: 0.2933, Validation Loss: 1.5366, Validation Accuracy: 44.79%, Validation F1 Score: 0.4281, Speed: 156.86 seconds
+
+Epoch 5: Training Loss: 0.0882, Training Accuracy: 31.03%, Training F1 Score: 0.3072, Validation Loss: 1.4526, Validation Accuracy: 48.15%, Validation F1 Score: 0.4689, Speed: 167.00 seconds
+
+Epoch 6: Training Loss: 0.0869, Training Accuracy: 31.59%, Training F1 Score: 0.3129, Validation Loss: 1.4300, Validation Accuracy: 50.12%, Validation F1 Score: 0.4992, Speed: 146.76 seconds
+
+Epoch 7: Training Loss: 0.0852, Training Accuracy: 32.60%, Training F1 Score: 0.3233, Validation Loss: 1.3917, Validation Accuracy: 50.35%, Validation F1 Score: 0.5006, Speed: 135.52 seconds
+
+Epoch 8: Training Loss: 0.0842, Training Accuracy: 32.95%, Training F1 Score: 0.3271, Validation Loss: 1.3764, Validation Accuracy: 51.58%, Validation F1 Score: 0.5146, Speed: 141.82 seconds
+
+Epoch 9: Training Loss: 0.0831, Training Accuracy: 33.56%, Training F1 Score: 0.3332, Validation Loss: 1.3357, Validation Accuracy: 53.06%, Validation F1 Score: 0.5290, Speed: 133.40 seconds
+
+Epoch 10: Training Loss: 0.0815, Training Accuracy: 34.41%, Training F1 Score: 0.3417, Validation Loss: 1.3223, Validation Accuracy: 54.02%, Validation F1 Score: 0.5389, Speed: 131.10 seconds
+
+Epoch 11: Training Loss: 0.0808, Training Accuracy: 35.38%, Training F1 Score: 0.3514, Validation Loss: 1.2814, Validation Accuracy: 55.38%, Validation F1 Score: 0.5501, Speed: 132.51 seconds
+
+Epoch 12: Training Loss: 0.0793, Training Accuracy: 36.22%, Training F1 Score: 0.3603, Validation Loss: 1.2933, Validation Accuracy: 54.31%, Validation F1 Score: 0.5321, Speed: 133.25 seconds
+
+Epoch 13: Training Loss: 0.0787, Training Accuracy: 36.52%, Training F1 Score: 0.3630, Validation Loss: 1.2531, Validation Accuracy: 56.10%, Validation F1 Score: 0.5576, Speed: 130.48 seconds
+
+Epoch 14: Training Loss: 0.0778, Training Accuracy: 37.00%, Training F1 Score: 0.3680, Validation Loss: 1.2746, Validation Accuracy: 55.02%, Validation F1 Score: 0.5449, Speed: 139.71 seconds
+
+Epoch 15: Training Loss: 0.0772, Training Accuracy: 37.95%, Training F1 Score: 0.3778, Validation Loss: 1.2602, Validation Accuracy: 56.27%, Validation F1 Score: 0.5568, Speed: 139.28 seconds
+
+Epoch 16: Training Loss: 0.0756, Training Accuracy: 37.80%, Training F1 Score: 0.3760, Validation Loss: 1.2315, Validation Accuracy: 56.62%, Validation F1 Score: 0.5655, Speed: 135.93 seconds
+
+Epoch 17: Training Loss: 0.0751, Training Accuracy: 38.45%, Training F1 Score: 0.3827, Validation Loss: 1.2326, Validation Accuracy: 57.79%, Validation F1 Score: 0.5718, Speed: 132.91 seconds
+
+Epoch 18: Training Loss: 0.0742, Training Accuracy: 38.62%, Training F1 Score: 0.3847, Validation Loss: 1.2417, Validation Accuracy: 56.33%, Validation F1 Score: 0.5597, Speed: 130.45 seconds
+
+Epoch 19: Training Loss: 0.0734, Training Accuracy: 39.03%, Training F1 Score: 0.3888, Validation Loss: 1.2091, Validation Accuracy: 58.92%, Validation F1 Score: 0.5886, Speed: 130.73 seconds
+
+Epoch 20: Training Loss: 0.0724, Training Accuracy: 40.05%, Training F1 Score: 0.3990, Validation Loss: 1.2390, Validation Accuracy: 57.29%, Validation F1 Score: 0.5700, Speed: 132.01 seconds
+Training done.
+
+- Report a summary of loss values and the metrics on the holdout test set.
+Holdout Test Set: Loss: 1.2211, Accuracy: 57.42%, F1 Score: 0.5671

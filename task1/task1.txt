@@ -1,0 +1,67 @@
+Task 1 Stochastic Minibatch Gradient Descent for Linear Models
+————————————————————————————————————————————————
+————————————————————————————————————————————————
+task.py - report
+————————————————————————————————————————————————
+
+- Report the mean and standard deviation in difference between the observed training data and the underlying “true” polynomial curve. 
+The mean in difference between the observed training data and the underlying “true” polynomial curve: -0.0948
+The standard deviation in difference between the observed training data and the underlying “true” polynomial curve: 0.3736
+
+- Report the mean and standard deviation in difference between the “LS-predicted” values and the underlying “true” polynomial curve for M = 2,3,4.
+The mean in difference between the “LS-predicted” values and the underlying “true” polynomial curve for M = 2: -0.0947
+The standard deviation in difference between the “LS-predicted” values and the underlying “true” polynomial curve for M = 2: 0.0736
+
+The mean in difference between the “LS-predicted” values and the underlying “true” polynomial curve for M = 3: -0.0949
+The standard deviation in difference between the “LS-predicted” values and the underlying “true” polynomial curve for M = 3: 0.0740
+
+The mean in difference between the “LS-predicted” values and the underlying “true” polynomial curve for M = 4: -0.0948
+The standard deviation in difference between the “LS-predicted” values and the underlying “true” polynomial curve for M = 4: 0.1194
+
+- Report the loss periodically using printed messages for SGD algorithm.
+epoch 100 loss 210.3385467529297
+epoch 200 loss 9.905354499816895
+epoch 300 loss 0.3300226330757141
+epoch 400 loss 0.1682046353816986
+epoch 500 loss 0.1547183245420456
+epoch 600 loss 0.14568980038166046
+epoch 700 loss 0.13988026976585388
+epoch 800 loss 0.1385202407836914
+epoch 900 loss 0.14228475093841553
+epoch 1000 loss 0.1511228084564209
+
+- Report the mean and standard deviation in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 2,3,4.
+The mean in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 2: 0.0280
+The standard deviation in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 2: 0.2055
+
+The mean in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 3: 0.8384
+The standard deviation in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 3: 2.6973
+
+The mean in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 4: -26.5003
+The standard deviation in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 4: 39.5002
+
+- Compare the accuracy of your implementation using the two methods with ground-truth on test set and report the RMSEs in w and y
+RMSE in y for M = (2, 3, 4) using LS: 0.1280, 0.1279, 0.1839
+RMSE in y for M = (2, 3, 4) using SGD: 0.2187, 2.8496, 49.5913
+
+RMSE in w for M = 2 using LS: 0.0161
+RMSE in w for M = 2 using SGD: 0.1434
+
+- Compare the speed of the two methods and report time
+Time spent in fitting/training using LS: 0.0002
+Time spent in fitting/training using SGD: 1.4659
+
+
+
+————————————————————————————————————————————————
+task1a.py - report
+————————————————————————————————————————————————
+The algorithm dynamically adjusts a model's complexity by introducing gates alongside weights in a polynomial function. These gates, modified through training, control the impact of each polynomial term. The model learns not only the best weights but also the optimal polynomial degree required for accurate predictions, thus automatically preventing overfitting by discarding unnecessary terms. The final model complexity is determined by applying a threshold to the gates' outputs after training, ensuring only significant terms are retained.
+
+For a training set designed as follows: “Generate a training set and test set: m = 2, w = [1, 2, 3] using polynomial_fun”, the reported printed messages look as such:
+
+- Report the optimised M value and the mean (and standard deviation) in difference between the model-predicted values and the underlying “true” polynomial curve.
+The optimised M value: 2
+The mean in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 2: -1.1218
+The standard deviation in difference between the “SGD-predicted” values and the underlying “true” polynomial curve for M = 2: 7.6323
+
