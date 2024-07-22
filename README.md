@@ -1,1 +1,6 @@
 # Applied-Deep-Learning
+This repository showcases the implementation of several deep learning models and techniques using TensorFlow and PyTorch. The project is structured around three major tasks:
+
+- Task 1: Polynomial Regression via Gradient Descent - Developed polynomial regression models, applying both least squares and stochastic minibatch gradient descent methods. This  involved writing custom functions to handle polynomial calculations and optimizing these using gradient descent techniques within TensorFlow or PyTorch frameworks.
+- Task 2: Vision Transformers with Custom Data Augmentation - Adapted a Vision Transformer model for image classification, incorporating a custom data augmentation technique based on the MixUp algorithm. This task required to build the MixUp functionality from scratch, thus exploring different image and label blending techniques to enhance model robustness during training.
+- Task 3: Ablation Study on Model Modifications - Conducted an ablation study to evaluate the impact of different data augmentation strategies on the performance of the Vision Transformer model. This involved creating a detailed setup for training, validating, and testing the models with varied data splits and monitoring several performance metrics to assess the effects of these modifications.
