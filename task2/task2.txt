@@ -1,0 +1,83 @@
+Task 2 A depth-wise separable convolution
+————————————————————————————————————————————————
+————————————————————————————————————————————————
+task.py - report
+————————————————————————————————————————————————
+
+———— Sampling method 1 ————
+Final model:
+sampling_method_1_model_epoch_20.pt 
+
+- Periodically reported loss:
+[1,  2000] loss: 1.890
+[2,  2000] loss: 1.710
+[3,  2000] loss: 1.612
+[4,  2000] loss: 1.536
+[5,  2000] loss: 1.471
+[6,  2000] loss: 1.426
+[7,  2000] loss: 1.379
+[8,  2000] loss: 1.344
+[9,  2000] loss: 1.282
+[10,  2000] loss: 1.246
+[11,  2000] loss: 1.191
+[12,  2000] loss: 1.176
+[13,  2000] loss: 1.118
+[14,  2000] loss: 1.072
+[15,  2000] loss: 1.046
+[16,  2000] loss: 1.021
+[17,  2000] loss: 0.951
+[18,  2000] loss: 0.941
+[19,  2000] loss: 0.891
+[20,  2000] loss: 0.885
+Training done.
+
+- Classification accuracy versus the epochs
+Accuracy of the model at epoch 1: 39.45%
+Accuracy of the model at epoch 5: 52.41%
+Accuracy of the model at epoch 10: 56.85%
+Accuracy of the model at epoch 15: 57.76%
+Accuracy of the model at epoch 20: 58.17%
+
+- Results compatible with the result_sampling_method_1.png, indicating ground-truth and predicted class for each image
+Ground-truth:    cat  ship  ship plane  frog  frog   car  frog   cat   car plane truck   dog horse truck  ship   dog horse  ship  frog horse plane  deer truck   dog  bird  deer plane truck  frog  frog   dog  deer   dog truck  bird
+Predicted:    car  ship  ship plane  frog  frog   car  frog   dog   car plane truck   dog horse truck  bird   cat truck  ship  frog truck plane plane truck  bird  deer horse  frog   car  frog  frog  deer  deer   dog truck truck
+
+———— Sampling method 2 ———— * method is a hyperparameter, can be changed in line 87
+
+Final model:
+sampling_method_2_model_epoch_20.pt 
+
+- Periodically reported loss:
+[1,  2000] loss: 2.024
+[2,  2000] loss: 1.892
+[3,  2000] loss: 1.831
+[4,  2000] loss: 1.782
+[5,  2000] loss: 1.744
+[6,  2000] loss: 1.715
+[7,  2000] loss: 1.679
+[8,  2000] loss: 1.654
+[9,  2000] loss: 1.622
+[10,  2000] loss: 1.604
+[11,  2000] loss: 1.588
+[12,  2000] loss: 1.565
+[13,  2000] loss: 1.537
+[14,  2000] loss: 1.519
+[15,  2000] loss: 1.508
+[16,  2000] loss: 1.477
+[17,  2000] loss: 1.468
+[18,  2000] loss: 1.455
+[19,  2000] loss: 1.429
+[20,  2000] loss: 1.414
+Training done.
+
+- Classification accuracy versus the epochs
+Accuracy of the model at epoch 1: 38.12%
+Accuracy of the model at epoch 5: 48.97%
+Accuracy of the model at epoch 10: 55.27%
+Accuracy of the model at epoch 15: 58.41%
+Accuracy of the model at epoch 20: 60.47%
+
+- Results compatible with the result_sampling_method_2.png, indicating ground-truth and predicted class for each image
+Ground-truth:    cat  ship  ship plane  frog  frog   car  frog   cat   car plane truck   dog horse truck  ship   dog horse  ship  frog horse plane  deer truck   dog  bird  deer plane truck  frog  frog   dog  deer   dog truck  bird
+Predicted:    cat  ship plane plane  frog  frog   car  frog   dog   car plane truck  frog horse truck plane   cat truck  ship  frog horse plane plane truck  deer  deer   cat plane truck  frog   cat  deer  deer   cat truck horse
+
